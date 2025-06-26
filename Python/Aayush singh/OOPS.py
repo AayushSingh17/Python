@@ -163,3 +163,47 @@ c= Cat()
 
 make_sound(b)
 make_sound(c)
+
+
+# class Point:
+#     def __init__(self, x ,y):
+#         self.x=x
+#         self.y=y
+
+#     def __add__(self, other):
+#         return Point(self.x + other.x, self.y +           other.y)
+
+# P1=Point(2,4)
+# P2=Point(1,4)
+# P3=P1+P2
+# print(P3.x, P3.y)
+
+
+# class Book:
+#     def __init__(self, title, pages)
+#         self.title=title
+#         self.pages=pages
+
+#     def __add__(self, other):
+#         return self.pages + other.pages
+
+# b1=Book("Python Introduction", 300)
+# b2=Book("Harry Potter", 450)
+# print(b1+b2)
+
+
+
+class Student:
+    def __init__(self, name, roll):
+        self.name = name
+        self.roll = roll
+
+    def __eq__(self, value):
+        return self.roll == value.roll
+
+s1 = Student("Aayush", 44)
+s2 = Student("Aadi", 48)
+s3 = Student("Jay", 44)
+
+print(s1 == s3)
+print(s1 == s2)
