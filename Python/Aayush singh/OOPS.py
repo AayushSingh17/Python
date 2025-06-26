@@ -147,6 +147,8 @@ v2.payment()
 
 #Polymorphism
 
+#Runtime Polymorphism
+
 class Bird:
     def sound(self):
         print("Chirp")
@@ -164,6 +166,8 @@ c= Cat()
 make_sound(b)
 make_sound(c)
 
+
+#Compile Runtime
 
 # class Point:
 #     def __init__(self, x ,y):
@@ -193,21 +197,121 @@ make_sound(c)
 
 
 
-class Student:
-    def __init__(self, name, roll):
-        self.name = name
-        self.roll = roll
+# class Student:
+#     def __init__(self, name, roll):
+#         self.name = name
+#         self.roll = roll
 
-    def __eq__(self, value):
-        return self.roll == value.roll
+#     def __eq__(self, value):
+#         return self.roll == value.roll
 
-s1 = Student("Aayush", 44)
-s2 = Student("Aadi", 48)
-s3 = Student("Jay", 44)
-print(s1 == s3)
-print(s1 == s2)
+# s1 = Student("Aayush", 44)
+# s2 = Student("Aadi", 48)
+# s3 = Student("Jay", 44)
+
+# print(s1 == s3)
+# print(s1 == s2)
 
 
 
 
-#https://aman-0402.github.io/StudyPython/
+# #File Handling...
+
+# f = open("aayu.txt", "r")
+# print(f.read())
+
+
+# line1=f.readline()
+# line2=f.readline()
+# print(line1,line2)
+# lines=f.readlines()
+# for i in lines:
+#     print(i.strip())
+
+# f1=open("output.txt", "w")
+# f1.write("Hello World\n")
+# f1.write("Hello Aayush")
+
+# l1=["apple\t", "guava"]
+# f1.writelines(l1)
+
+
+# f2=open("aayu.txt")
+# f2.write("\nnew Content added")
+
+# import os
+# print(os.getcwd())
+
+# #to print the path to same file
+# print(os.path.exists("output.txt"))
+# print(os.path.exists("output1.txt"))
+
+
+# os.rename("output.txt", "output1.txt")
+
+
+
+# with ope("image.jpg","rb")
+#     data = f.read()
+
+
+# os.remove("aayu.txt")
+
+
+class A:
+    def greet(self):
+        print("Hello from A")
+
+class B(A):
+    def greet(self):
+        print("Hello from B")
+
+class C(A):
+    def greet(self):
+        print("Hello from C")
+
+class D(B, C):
+    pass
+
+d = D()
+d.greet()
+
+
+
+
+class Test:
+    count = 0
+
+    def __init__(self):
+        Test.count += 1
+
+a = Test()
+b = Test()
+c = Test()
+print(Test.count)
+
+
+
+
+class Demo:
+    def __init__(self, val):
+        self.value = val
+
+    def show(self):
+        print(self.value * 2)
+
+obj = Demo(5)
+obj.show()
+
+
+
+class Demo:
+    def __init__(self, x):
+        self.__x = x
+
+    def show(self):
+        print(self.__x)
+
+d = Demo(10)
+d.show()
+print(d._Demo__x)
