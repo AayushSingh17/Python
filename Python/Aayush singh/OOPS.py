@@ -204,6 +204,10 @@ class Student:
 s1 = Student("Aayush", 44)
 s2 = Student("Aadi", 48)
 s3 = Student("Jay", 44)
-
 print(s1 == s3)
 print(s1 == s2)
+
+
+
+
+#https://aman-0402.github.io/StudyPython/
