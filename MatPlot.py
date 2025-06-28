@@ -5,10 +5,7 @@
 
 import matplotlib.pyplot as plt 
 import numpy as np
-
-# Line Plot
-
-# x = [1,3,4,6,7]
+ 
 # y = [22,33,66,11,77]
 
 # plt.plot(x,y)
@@ -62,16 +59,16 @@ import numpy as np
 # plt.show()
 
 #SubPlot...
-x= [2,3,4,5,6,7,8,9]
-y = [11,22,33,44,55,66,77,88]
+# x= [2,3,4,5,6,7,8,9]
+# y = [11,22,33,44,55,66,77,88]
 
-plt.subplot(1,2,1)
-plt.plot(x, y)
-plt.subplot(1,2,2)
-plt.plot(x, y)
-plt.tight_layout()
-plt.savefig("plot.png", dpi=300)
-plt.show()
+# plt.subplot(1,2,1)
+# plt.plot(x, y)
+# plt.subplot(1,2,2)
+# plt.plot(x, y)
+# plt.tight_layout()
+# plt.savefig("plot.png", dpi=300)
+# plt.show()
 
 
 
